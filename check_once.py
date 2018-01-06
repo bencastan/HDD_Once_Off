@@ -16,8 +16,8 @@ def check_once():
             splitline = line.decode().split()
             if splitline[5] in partition and splitline[0] != "rootfs":
                 if int(splitline[4][:-1]) > threshold:
-                    #print(splitline[5])
-                    #print(int(splitline[4][:-1]))
+                    # print(splitline[5])
+                    # print(int(splitline[4][:-1]))
                     print(thisHost)
                     print("Partition {} is at {}%".format(str(splitline[5]), str(splitline[4][:-1])))
                     print()
